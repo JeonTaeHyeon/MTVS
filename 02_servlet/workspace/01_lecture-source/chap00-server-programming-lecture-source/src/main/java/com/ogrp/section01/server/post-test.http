@@ -1,0 +1,8 @@
+### POST Method test with json data
+POST http://localhost:19204
+Content-Type: application/json
+
+{
+  "userID": "user01",
+  "userName": "홍길동"
+}

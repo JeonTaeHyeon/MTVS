@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap01-literal-and-variable-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap02-operator-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap03-method-and-api-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap04-control-flow-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap05-array-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap06-class-and-object-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap07-object-array-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap08-inheritance-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap09-polymorphism-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap10-api-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap11-generics-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap12-collection-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap13-exception-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap14-io-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap15-enum-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap16-lambda-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/01_java-foundation/01_lecture-source/chap17-stream-lecture-source" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/Java" />
+    <file type="web" url="file://$PROJECT_DIR$/workspace/javatest" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

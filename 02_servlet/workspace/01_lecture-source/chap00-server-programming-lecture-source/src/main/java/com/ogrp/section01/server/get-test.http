@@ -1,0 +1,5 @@
+### Simple GET method test
+GET http://localhost:19204
+
+### GET Method test with parameter
+GET http://localhost:19204/?name=gildong&age=20
