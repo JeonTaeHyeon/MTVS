@@ -7,6 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Application {
     public static void main(String[] args) {
+
         ApplicationContext context=
                 new AnnotationConfigApplicationContext(ContextConfiguration.class);
 
@@ -20,7 +21,6 @@ public class Application {
 
 
         BeverageDAO beverageDAO= context.getBean("beverageDAO", BeverageDAO.class);
-        //getBean에 들어가는 name은 앞에를 소문자로 바꾼 name을 쓰는게 원칙
         System.out.println(beverageDAO.findBeverageByIndex(1));
     }
 }
