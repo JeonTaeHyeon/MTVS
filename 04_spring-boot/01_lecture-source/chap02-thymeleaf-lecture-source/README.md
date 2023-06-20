@@ -5,7 +5,7 @@
 
 </aside>
 
-![Untitled](C:\Users\user\Downloads\18962159-d64c-4eaf-ab23-c6048ad103ae_Export-59e838ac-80d6-422d-83aa-e19311c0d37b\Thymeleaf 09ed77ca1c0745ff9199082786f07424\Untitled.png)
+<img width="148" alt="Untitled" src="https://github.com/JeonTaeHyeon/MTVS/assets/74136791/7a1fb35f-ee0f-482b-a9cb-2c82441b790b">
 
 > 즉 server side 렌더링을 수행하기 때문에 server와 정상적으로 연결되어 있지 않는다면 작동하지 않
 >
