@@ -5,10 +5,12 @@
 
 </aside>
 
+
+> 즉 server side 렌더링을 수행하기 때문에 server와 정상적으로 연결되어 있지 않는다면 작동하지 않음
+
+
 <img width="148" alt="Untitled" src="https://github.com/JeonTaeHyeon/MTVS/assets/74136791/7a1fb35f-ee0f-482b-a9cb-2c82441b790b">
 
-> 즉 server side 렌더링을 수행하기 때문에 server와 정상적으로 연결되어 있지 않는다면 작동하지 않
->
 
 templates밑에는 forward를 통해서만 접근할 수 있고 우리한테는 html로 보이지만 thymeleaf라고 생각해야됨
 
