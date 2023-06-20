@@ -12,21 +12,23 @@
 
 templates밑에는 forward를 통해서만 접근할 수 있고 우리한테는 html로 보이지만 thymeleaf라고 생각해야됨
 
-![Untitled](Thymeleaf%2009ed77ca1c0745ff9199082786f07424/Untitled%201.png)
+<img width="151" alt="Untitled 1" src="https://github.com/JeonTaeHyeon/MTVS/assets/74136791/b7aa737f-ddb6-4db7-80b9-0322f7946b8c">
 
 Application을 config하위에 이동시키면  error가 발생함.
 
 component scan을 하는 base package를 설정 안해줘서 오류가 발생하는것임
 
-![Untitled](Thymeleaf%2009ed77ca1c0745ff9199082786f07424/Untitled%202.png)
 
-![Untitled](Thymeleaf%2009ed77ca1c0745ff9199082786f07424/Untitled%203.png)
+![Untitled 2](https://github.com/JeonTaeHyeon/MTVS/assets/74136791/27104820-2682-478d-a477-45ea3a77daa6)
+
+![Untitled 3](https://github.com/JeonTaeHyeon/MTVS/assets/74136791/d8211d8b-3be8-4cb5-9dae-dbb9919ffcde)
+
 
 해결하기 위해서 contextconfiguration class를 만들고 basepackage를 바꿔주면 해결할 수 있음.
+<img width="386" alt="Untitled 4" src="https://github.com/JeonTaeHyeon/MTVS/assets/74136791/0e130920-cdce-4a98-8e74-14b36ac10230">
 
-![Untitled](Thymeleaf%2009ed77ca1c0745ff9199082786f07424/Untitled%204.png)
+<img width="225" alt="Untitled 5" src="https://github.com/JeonTaeHyeon/MTVS/assets/74136791/9afd92c0-f93a-46c9-a952-97b030fb2373">
 
-![Untitled](Thymeleaf%2009ed77ca1c0745ff9199082786f07424/Untitled%205.png)
 
 static은 직접 접근 가능, templetes는 직접 접근 불가
 
@@ -99,8 +101,8 @@ mv.addObject("member",new MemberDTO("홍길동",20,'남',"서울시"));
     <li><input type="text" th:value="타입리프"></li>
 </ul>
 ```
+![Untitled 6](https://github.com/JeonTaeHyeon/MTVS/assets/74136791/6d368e31-0a4a-4f82-af3c-f92abc15fc5a)
 
-![Untitled](Thymeleaf%2009ed77ca1c0745ff9199082786f07424/Untitled%206.png)
 
 그냥 text를 사용하면 문자 그대로가 오고 utext를 사용하면 태그가 적용돼서 나옴, value를 사용하면  초기값 설정할 수 있음
 
