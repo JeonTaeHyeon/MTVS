@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!--    <link rel="stylesheet" type="text/css", href="/css/common.css">-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/common.css}">
+</head>
+<body>
+<h1 align="center">표현식</h1>
+<h2>주석</h2>
+<!--th:text가 붙으면 thymeleaf 문법-->
+<ul>
+    <li>parser-level 주석</li>
+    <!--/* 주석내용  */-->
+    <li>prototype-only 주석</li>
+    <!--/*/  주석내용  /*/-->
+</ul>
+
+<h2>변수표현식${...}</h2>
+<p th:text="${param.title}"></p>
+<p th:text="${param.no[0]}"></p>
+<p th:text="${param.no[1]}"></p>
+
+
+<h2>메세지 표현식 #{...}</h2>
+<p th:text="#{message.value}"></p>
+
+<h2>링크 표현식@{...]</h2>
+<a th:href="@{/}">메인으로</a>
+
+<h2>선택 변수 표현식 *{...}</h2>
+<p th:text="${member}"></p>
+
+<div th:object="${member}">
+    <p th:text="*{age}"></p>
+    <p th:text="*{gender}"></p>
+    <p th:text="*{address}"></p>
+</div>
+
+<h2>HTML 출력 th:text, th:utext, th:value</h2>
+<ul>
+    <l1 th:text="${hello}"></l1>
+    <l1 th:utext="${hello}"></l1>
+    <li><input type="text" th:value="타입리프"></li>
+</ul>
+
+<h2 th:inline="none">인라인 표현식 [[...]] <- th:text, [(...)] <- th:utext</h2>
+
+<ul>
+    <li th:inline="none">[[${hello}]]</li>
+    <li>[[${hello}]]</li>
+    <li>[(${hello})]</li>
+</ul>
+
+
+<script th:inline="javascript">
+    window.onload=function (){
+        let hello = '[[${hello}]]';
+       //alert(hello);
+    }
+</script>
+
+<h2>리터럴 치환 ||</h2>
+<p th:object="${member}" th:text="|*{name}|"></p>
+
+<h2>th:block</h2>
+<th:block th:object = "${member}">
+    <p th:text="*{age}"></p>
+</th:block>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 align="center">제어문</h1>
+<h2>th:if, th:unless</h2>
+<p th:if="${num>0}">넘어온 값은 0보다 크다.</p>
+<p th:if="${num<=0}">넘오온 값은 0보다 작거나 같다.</p>
+<p th:unless = "${num<0}">넘어온 값은 0보다 크다.</p>
+<!--unless는 조건에 해당하지 않으면 렌더링 시키고 if 는 조건에 해당하면 렌더링-->
+
+<th:block th:if="${str=='사과'}">
+    <p>사과가 좋아요</p>
+</th:block>
+<th:block th:if="${str=='바나나'}">
+    <p>바나나가 좋아요</p>
+</th:block>
+<p th:if="${num>0 and num<=10}">1부터 10까지의 양수</p>
+<p th:if="${str!=null and str=='바나나'}">바나나</p>
+<!--
+    utility object(method를 사용하기 위해 utility object를 사용할 수 있음
+    - String
+    - Numbers
+    - Object
+    - Arrays
+    - Lists
+    - Maps
+    - Messages
+    - Date
+    - Calendars
+-->
+<p th:if="${!#strings.isEmpty(str)}">바나나 바나나</p>
+
+<h2>th: switch, th:case</h2>
+<th:block th:switch="${str}">
+    <span th:case = "사과">사과가 선택되었습니다.</span>
+    <span th:case = "바나나">바나나가 선택되었습니다.</span>
+</th:block>
+
+<h2>th:each</h2>
+<table border="1">
+    <tr>
+        <th>이름</th>
+        <th>나이</th>
+        <th>성별</th>
+        <th>주소</th>
+
+    </tr>
+    <tr th:each="member : ${members}">
+        <td th:text = "${member.name}"></td>
+        <td th:text = "${member.age}"></td>
+        <td th:text = "${member.gender}"></td>
+        <td th:text = "${member.address}"></td>
+    </tr>
+</table>
+
+<h2>#numbers를 이용한 반복문</h2>
+<th:block th:each="num:${#numbers.sequence(5,10)}">
+    <a th:href="@{|/numbering/${numStat.count}|}" th:text="번호 + ${num}">번호</a>
+
+</th:block>
+
+</body>
+</html>

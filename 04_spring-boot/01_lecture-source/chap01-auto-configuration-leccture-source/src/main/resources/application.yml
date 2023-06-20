@@ -1,0 +1,9 @@
+test:
+  greeting: hi!!!
+  array: 안녕, 반가워
+#  array:
+#    - 안녕
+#    - 반가워
+# 이렇게 쓰긴 어려우니까 그냥 위처럼 사용
+  value: hell world!!
+username: 김진호
